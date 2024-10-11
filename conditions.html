@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Statements</title>
+    <h1>Understanding Conditional Statements</h1>
+</head>
+<p>
+    <!--if condition-->
+    <p>
+    <script>
+        var a = 10;
+        var b = 20;
+        if (a < b){
+            document.write ("a is less than b");
+        }
+    </script>
+    </p>
+
+    <!--if else condition-->
+    <p>
+    <script>
+        var name = "Ayman";
+        var gender = "Female";
+        if (name == "Ayman"){
+            document.write("Hi " + name);
+        }
+        else{
+            document.write("error! name not found.");
+        }
+    </script>
+    </p>
+
+    <!--if else if condition-->
+    <p>
+    <script>
+        var per = 41;
+        if (per >= 80 && per <=100){
+            document.write("Student is on Merit.")
+        }
+        else if(per >= 60 && per <=79){
+            document.write("Student got First Division.")
+        }
+        else if(per >= 40 && per <=59){
+            document.write("Student got Second Division.")
+        }
+        else{
+            document.write("Student is Fail.")
+        }
+    </script>
+    </p>
+
+    <!--ternary operator-->
+    <p>
+    <script>
+        var val1 = 100;
+        var val2;
+        val2 = "Value is " + (val1 == 100? "true" : "false");
+        document.write(val2);
+    </script>
+    </p>
+
+    <!--switch condition-->
+    <p>
+    <script>
+        var day = 4;
+        switch (day){
+            case 0:            <!--case 0: case 1: case 2: in case we want to print same value of diff cases-->
+                document.write ("Today is Monday");
+            break;
+
+            case 1:
+            document.write ("Today is Tuesday");
+            break;
+
+            case 2:
+            document.write ("Today is Wednesday");
+            break;
+
+            case 3:
+            document.write ("Today is Thursday");
+            break;
+
+            case 4:
+            document.write ("Today is Friday");
+            break;
+
+            case 5:
+            document.write ("Today is Saturday");
+            break;
+
+            case 6:
+            document.write ("Today is Sunday");
+            break;
+
+        default:
+        document.write ("Enter Valid Day");
+        }
+    </script>
+    </p>
+</body>
+</html>
